@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+  --color-primary: #BE9E44;
+  --color-primary-100: #EADFC3;
+  --color-primary-200: #DFD0A4;
+  --color-primary-300: #DAC895;
+  --color-primary-400: #D5C086;
+  --color-primary-500: #CFB877;
+  --color-primary-600: #CAB068;
+  --color-primary-700: #C5A859;
+  --color-primary-800: #BE9E44;
+  --color-primary-900: #B59640;
+  --color-primary-1000: #977D35;
+}
+
+#root {
+  width: 100%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
